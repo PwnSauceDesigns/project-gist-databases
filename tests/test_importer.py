@@ -35,7 +35,7 @@ def test_importer_imports_data_correctly(
 
     import_gists_to_database(gists_database, 'gvanrossum')
 
-    query = 'SELECT COUNT(*) FROM gists;'
+    query = 'SELECT COUNT(*) FROM gists;'  # gists is a table
     cursor = gists_database.execute(query)
     count = cursor.fetchone()[0]
     assert count == 7

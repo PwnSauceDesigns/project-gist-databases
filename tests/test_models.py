@@ -1,7 +1,7 @@
 import pytest
-
 from gists_database.models import Gist
 from tests.fixtures import clean_gists_database
+
 
 GIST_DATA = (
     7,
